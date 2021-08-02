@@ -1,0 +1,112 @@
+#navBar{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#namePlate h2{
+	border:4px solid white;
+	display:inline-block;
+	position:absolute;
+	left:2%;
+	top:15px;
+	padding:5px;
+}
+#navItems{
+	display:inline-block;
+	position:absolute;
+	right:2%;
+	width:50%;
+	top:47px;
+	text-align:right;
+}
+#navItems div{
+	display:inline-block;
+	margin-right:4%;
+	font-weight:bold;
+}
+#navItems div:hover{
+	color:#0072b1 !important;
+	cursor: pointer !important;
+}
+#mobileNavHam{
+	display:inline-block;
+	background-image:url("../public/mobile/hamburger.png");
+}
+#mobileNavCross{
+	display:none;
+	background-image:url("../public/mobile/cross.png");
+}
+#mobileNavMenu{
+	display:none;
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+#innerMobileMenu {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+	font-size:30px;
+}
+#innerMobileMenu div {
+	line-height:60px;
+}
+#linkedNav{
+	display:inline-block;
+	background-image:url("../public/linkedin.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:25px;
+	width:25px;
+}
+#linkedNav:hover{
+	background-image:url("../public/linkedin_hover.png");
+}
+#button-addon1 {
+  color: #ffc371 !important;
+}
+
+.mobileBtn{
+	display:none !important;
+}
+
+i {
+  color: #ffc371 !important;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem !important;
+  color: #aaa !important;
+  font-style: italic !important;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+	#navItems {
+		display:none !important;
+	}
+	.mobileNav{
+		display:inline-block;
+		position:absolute !important;
+		right:2% !important;
+		top:10px !important;
+		text-align:right !important;
+		width:64px !important;
+		height:64px !important;
+	}
+	#mobileNavButtons{
+		display:block;
+	}
+	.siteBtn{
+		display:none !important;
+	}
+	.mobileBtn{
+		display:inline-block !important;
+	}
+}
